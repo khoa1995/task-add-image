@@ -1,0 +1,52 @@
+.thumb {
+    border: 1px solid #000000;
+    height: 75px;
+    margin: auto 5px 0 0;
+    width: 100px;
+}
+.thumb:hover{
+    filter: brightness(0.7);
+}
+.btn-remove{
+    top:0;
+    
+    background: #ce0122;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+.btn-remove i{
+    color: white;
+    margin:0 0 0 3px;
+}
+.add-img .btn-add{
+    border:1px solid skyblue;
+    border-radius: 10px;
+    width: 100px;
+    display: block;
+    background: #efefef;
+    text-align: center;
+    height: 79px;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: normal;
+    float: left;
+}
+.add-img .btn-add:focus{
+    outline: none;
+}
+.add-img .btn-add:hover{
+    transform: scale(1.1,1.1);
+    margin-left:5px;
+}
+.add-img div{
+     float: left;
+}
+.add-img #remove{
+    position: absolute;
+    margin-left: -18px;
+    cursor: pointer;
+    background: #ce0122;
+    color: white;
+}
