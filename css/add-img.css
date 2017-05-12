@@ -8,8 +8,7 @@
     filter: brightness(0.7);
 }
 .btn-remove{
-    top:0;
-    
+    top:0;  
     background: #ce0122;
     width: 16px;
     height: 16px;
