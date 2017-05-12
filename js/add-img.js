@@ -17,8 +17,8 @@ function handleFile(evt) {
             return function (e) {
                 //hiển thị hình theo dạng thu nhỏ.
                 var span = document.createElement('span');
-                span.innerHTML = ['<img class="thumb" id="thumb" src="', e.target.result,
-                    '" title="', escape(theFile.name), '"/>', '<i class="fa fa-times" id="remove" ></i>'
+                span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                    '" title="', escape(theFile.name), '"/>', '<i class="fa fa-times remove" ></i>'
                 ].join('');
 
                 document.getElementById('previewImg').insertBefore(span, null);
@@ -37,7 +37,7 @@ $('.btn-add').click(function () {
 //xoá hình ảnh qua nút x 
 //parent lấy thẻ đầu tiên bao bọc; parents sẽ lấy hết các thẻ bao bọc
 //closest sẽ lấy nguồn gốc đầu tiên của thẻ ta chỉ định
-$(document).on('click', '#remove', function () {
+$(document).on('click', '.remove', function () {
     if (confirm('Are you sure?')) {
         $(this).closest('span').empty();
         $('#files').val(null);
